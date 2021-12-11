@@ -22,7 +22,6 @@ public class Implicit {
         WebElement searchField = driver.findElement(By.name("q"));
         searchField.sendKeys("What time is it in Vietnam?", Keys.ENTER);
 
-
         driver.close();
     }
 }
