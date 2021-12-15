@@ -12,7 +12,6 @@ import java.time.Duration;
 public class PromptTest {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
-        Actions action = new Actions(driver);
         driver.manage().window().maximize();
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         String resultXpath = "//p[@id='result']";
@@ -30,8 +29,7 @@ public class PromptTest {
         System.out.printf("Accepted result is: %s%n", acceptedAndSendkeyResult);
         if (driver.getPageSource().contains(acceptedAndSendkeyResult)) {
             System.out.println("PASSED: Input and accepted successfully");
-        }
-        else {
+        } else {
             System.out.println("FAILED: Input and accepted failed");
         }
 
@@ -46,8 +44,7 @@ public class PromptTest {
         System.out.printf("Accepted result is: %s%n", dismissedAndSendkeyResult);
         if (driver.getPageSource().contains(dismissedAndSendkeyResult)) {
             System.out.println("PASSED: Input and dismissed successfully");
-        }
-        else {
+        } else {
             System.out.println("FAILED: Input and dismissed failed");
         }
 
