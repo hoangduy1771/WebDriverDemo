@@ -26,21 +26,32 @@ public class ExcelUtils {
 //        getCellDataString(0, 0);
 //    }
 
-    public static void getRowCount() {
+    public int getRowCount() {
         int rowCount = sheetXLSX.getPhysicalNumberOfRows();
         System.out.println("Number of rows: " + rowCount);
+        return rowCount;
     }
 
-    public static void getCellData(int rowNum, int cellNum) {
+    public int getColCount() {
+        int colCount = sheetXLSX.getRow(0).getPhysicalNumberOfCells();
+        System.out.println("Number of columns: " + colCount);
+        return colCount;
+    }
+
+    public static String getCellData(int rowNum, int cellNum) {
         String cellDataString;
-        double cellDataNumberic;
+        int cellDataNumberic;
         String message = "Data in row " + rowNum + ", in cell " + cellNum + " is: ";
         try {
             cellDataString = sheetXLSX.getRow(rowNum).getCell(cellNum).getStringCellValue();
-            System.out.println(message + cellDataString);
+//            System.out.println(message + cellDataString);
+            return cellDataString;
+
         } catch (Exception e) {
-            cellDataNumberic = sheetXLSX.getRow(rowNum).getCell(cellNum).getNumericCellValue();
-            System.out.println(message + (int) cellDataNumberic);
+            cellDataNumberic = (int) sheetXLSX.getRow(rowNum).getCell(cellNum).getNumericCellValue();
+//            System.out.println(message + cellDataNumberic);
+            return String.valueOf(cellDataNumberic);
         }
+
     }
 }

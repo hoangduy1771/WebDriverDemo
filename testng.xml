@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/work/Workspace/Testing/WebDriverDemo"><classes><class name="testng.TestCase"><methods><include name="testStep"/></methods></class><class name="testscripts.Test2_WithTestNG"><methods><include name="test2"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2"
+          name="F:/work/Workspace/Testing/WebDriverDemo/src/test/java/testng/TestNGParameterDemo.java">
+        <parameter name="MyName" value="Duy"></parameter>
+
+        <classes>
+            <class name="test.testng.TestNGParameterDemo"></class>
+        </classes>
+    </test>
+</suite>

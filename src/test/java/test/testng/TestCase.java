@@ -1,4 +1,4 @@
-package testng;
+package test.testng;
 
 import org.junit.Before;
 import org.testng.annotations.AfterTest;

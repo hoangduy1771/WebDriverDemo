@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import pages.GoogleSearchPage;
+import test.pageObjectModel.GoogleSearchPage;
 
 public class Test1_GoogleSearch {
     public static void main(String[] args) {

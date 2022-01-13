@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="F:/work/Workspace/Testing/WebDriverDemo">
+        <classes>
+            <class name="test.listeners.TestNGListenerDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+            <class name="test.testng.TestCase">
+                <methods>
+                    <include name="testStep"/>
+                </methods>
+            </class>
+            <class name="test.testng.TestNGMultiBrowserDemo">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="testscripts.Test2_WithTestNG">
+                <methods>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="testscripts.Test3_ConfigFiles">
+                <methods>
+                    <include name="test3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
