@@ -10,5 +10,7 @@ public class Experiments {
         long millis = System.currentTimeMillis();
         java.util.Date dateAndTime = new java.util.Date(millis);
         System.out.println("Date and time is: " + dateAndTime);
+
+        System.out.println(Boolean.valueOf("True"));
     }
 }
