@@ -128,7 +128,7 @@ public class Test4_Survey {
         driver.findElement
                 (By.xpath(String.format("(//div[@class='Zki2Ve' and text()='%s'])[7]", getRandomElement(choiceNum)))).click();
 
-        driver.findElement(By.xpath("//span[text()='Ngọc Thuý']")).click();
+        driver.findElement(By.xpath("//span[text()='']")).click();
 
 //        click send
         driver.findElement(By.xpath("//span[text()='Gửi']")).click();
