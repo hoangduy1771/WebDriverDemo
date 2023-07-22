@@ -7,54 +7,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-    <option name="ignoredPathMasks">
-      <list>
-        <option value="####" />
-        <option value="ignore" />
-        <option value="all" />
-        <option value=".idea" />
-        <option value="files" />
-        <option value="..." />
-        <option value="*" />
-        <option value="####" />
-        <option value="except" />
-        <option value="#" />
-        <option value="Version" />
-        <option value="Control" />
-        <option value="configuration" />
-        <option value="for" />
-        <option value="your" />
-        <option value="project" />
-        <option value="!vcs.xml" />
-        <option value="#" />
-        <option value="how" />
-        <option value="IDEA" />
-        <option value="should" />
-        <option value="treat" />
-        <option value="the" />
-        <option value="text" />
-        <option value="files" />
-        <option value="in" />
-        <option value="your" />
-        <option value="project" />
-        <option value="!encodings.xml" />
-        <option value="#" />
-        <option value="automatic" />
-        <option value="code" />
-        <option value="formatting" />
-        <option value="!codeStyleSettings.xml" />
-        <option value="#" />
-        <option value="project" />
-        <option value="specific" />
-        <option value="words" />
-        <option value="!dictionaries" />
-        <option value="!copyrights" />
-        <option value="!misc.xml" />
-        <option value="!sqldialects.xml" />
-      </list>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="corretto-20" project-jdk-type="JavaSDK" />
 </project>

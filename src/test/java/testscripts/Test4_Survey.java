@@ -17,11 +17,12 @@ public class Test4_Survey {
         return arr[ThreadLocalRandom.current().nextInt(arr.length)];
     }
 
-    @Test(invocationCount = 100)
+    @Test(invocationCount = 1)
     public void adMusicSurvey() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("incognito");
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
+        options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new ChromeDriver(options);
         driver.get("");
         driver.manage().window().maximize();
